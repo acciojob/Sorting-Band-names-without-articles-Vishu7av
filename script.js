@@ -1,5 +1,5 @@
 //your code here
-let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+let bands = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 
 function strip(bandName) {
   return bandName.replace(/^(a |the |an )/i, '').trim();
