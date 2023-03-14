@@ -1,18 +1,18 @@
 //your code here
-let bands = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 
-function strip(bandName) {
-  return bandName.replace(/^(a |the |an )/i, '').trim();
+function strip(touristSpotsNames) {
+  return touristSpotsNames.replace(/^(a |the |an )/i, '').trim();
 }
 
-const sortedBands = bands.slice().sort((a, b) => strip(a) > strip(b) ? 1 : -1);
+const sortedtouristSpotsNames = touristSpots.slice().sort((a, b) => strip(a) > strip(b) ? 1 : -1);
 
-document.querySelector('#bands').innerHTML =
+document.querySelector('#touristSpots').innerHTML =
   bands
-    .map(band => `<li>${band}</li>`)
+    .map(touristSpots => `<li>${touristSpots}</li>`)
     .join('');
 
-document.querySelector('#bandsSorted').innerHTML =
+document.querySelector('#touristSpotsSorted').innerHTML =
   sortedBands
-    .map(band => `<li>${band}</li>`)
+    .map(touristSpots => `<li>${touristSpots}</li>`)
     .join('');
